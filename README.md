@@ -26,23 +26,23 @@
 │              Backend (ASP.NET MVC 5 - C#)                    │
 ├─────────────────────────────────────────────────────────────┤
 │  Controllers                                                 │
-│  ├── HomeController        │ Trang chủ, tìm kiếm, lọc       │
-│  ├── DiaPhimNhacController │ API RESTful (JSON responses)   │
-│  ├── CartController        │ Giỏ hàng, thanh toán           │
-│  ├── AccountController     │ Đăng nhập, đăng ký             │
-│  ├── SellerController      │ Dashboard người bán            │
-│  └── CategoryController    │ Quản lý thể loại                │
+│  ├── HomeController         │ Trang chủ, tìm kiếm, lọc       │
+│  ├── DiaPhimNhacController  │ API RESTful (JSON responses)   │
+│  ├── CartController         │ Giỏ hàng, thanh toán           │
+│  ├── AccountController      │ Đăng nhập, đăng ký             │
+│  ├── SellerController       │ Dashboard người bán            │
+│  └── CategoryController     │ Quản lý thể loại               │
 ├─────────────────────────────────────────────────────────────┤
 │  Models                                                     │
 │  ├── Entity Framework (EDMX)                                 │
-│  ├── DTOs                  │ DiaDTO, PagedResult            │
-│  ├── ViewModels            │ TopProductViewModel            │
-│  └── Stored Procedures     │ sp_GetChiTietDiaPhimCaNhac...  │
+│  ├── DTOs                   │ DiaDTO, PagedResult            │
+│  ├── ViewModels             │ TopProductViewModel            │
+│  └── Stored Procedures      │ sp_GetChiTietDiaPhimCaNhac...  │
 └─────────────────────────┬───────────────────────────────────┘
                           │
 ┌─────────────────────────▼───────────────────────────────────┐
-│                    SQL Server Database                        │
-│        QUANLY_DIAPHIM_CANHAC (21 bảng)                        │
+│                    SQL Server Database                       │
+│        QUANLY_DIAPHIM_CANHAC (21 bảng)                       │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -77,7 +77,7 @@ DoAnQuanLyQuangCaoDiaPhimCaNhac/
 ├── Scripts/                     # JavaScript, jQuery
 ├── App_Start/                   # Bundle, Filter, Route config
 ├── Backup.sql                   # Script tạo database
-├── Web.config.example.txt        # Template cấu hình
+├── Web.config.example.txt       # Template cấu hình
 └── DoAnQuanLyQuangCaoDiaPhimCaNhac.sln
 ```
 
@@ -97,7 +97,7 @@ DoAnQuanLyQuangCaoDiaPhimCaNhac/
 - SQL Server 2012 trở lên
 - Visual Studio 2019 trở lên
 
-## Cài đặt
+## Cài Đặt
 
 ### 1. Cấu hình Database
 
@@ -136,6 +136,8 @@ Nhấn **F5** để chạy.
 | Đặt hàng | Điền địa chỉ giao hàng và thanh toán |
 | Đăng nhập người bán | seller1 / 123 để vào dashboard |
 
+*(Tài khoản khách hàng đăng ký trực tiếp trên web)*
+
 ## API Endpoints
 
 | Method | Endpoint | Mô tả |
@@ -154,4 +156,4 @@ Nhấn **F5** để chạy.
 
 ## License
 
-[MIT License](/HoangThaNHty/Do_An_QuanLy_QuangCaoDiaPhimCaNhac/blob/main/LICENSE)
+[MIT License](LICENSE)
