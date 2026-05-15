@@ -115,27 +115,6 @@ DoAnQuanLyQuangCaoDiaPhimCaNhac/
 └── DoAnQuanLyQuangCaoDiaPhimCaNhac.sln
 ```
 
----
-
-## Các Bảng Chính Trong Database
-
-- `KhachHang` - Thông tin khách hàng
-- `NguoiBan` - Thông tin người bán
-- `DiaPhimCaNhac` - Sản phẩm đĩa (phim/nhạc)
-- `LoaiDia` - Thể loại đĩa
-- `NhaSanXuat` - Nhà sản xuất
-- `GioHang` - Giỏ hàng
-- `DonHang` - Đơn hàng
-- `ChiTietDonHang` - Chi tiết đơn hàng
-- `DanhGiaSanPham` - Đánh giá sản phẩm
-- `GiaoDichThanhToan` - Giao dịch thanh toán
-- `KhuyenMai` - Khuyến mãi
-- `TrangThaiGiaoHang` - Trạng thái giao hàng
-- `NgheSi` - Nghệ sĩ
-- `ThamGiaThucHien` - Tham gia thực hiện (phim/nhạc)
-
----
-
 ## Cài Đặt
 
 ### 1. Cấu hình Database
@@ -168,20 +147,6 @@ Mở solution trong Visual Studio và nhấn **F5**.
 | Người bán | seller2 | 123 |
 
 *(Tài khoản khách hàng đăng ký trực tiếp trên web)*
-
----
-
-## API Endpoints (RESTful)
-
-| Method | Endpoint | Mô tả |
-|---|---|---|
-| GET | `/DiaPhimNhac/ChiTietDiaPhimCaNhac?id={id}` | Chi tiết sản phẩm |
-| GET | `/DiaPhimNhac/GetByLoaiDia?id={loai}` | Lấy sản phẩm theo thể loại (có phân trang) |
-| GET | `/DiaPhimNhac/Search?keyword={keyword}` | Tìm kiếm sản phẩm |
-| GET | `/DiaPhimNhac/GetSanPhamNoiBat` | Sản phẩm nổi bật |
-| POST | `/DiaPhimNhac/ThemVaoGioHang` | Thêm vào giỏ hàng |
-
----
 
 ## License
 
